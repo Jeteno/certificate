@@ -1,0 +1,476 @@
+/* @charset "UTF-8"; */
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;   
+    color: #000;
+    font-style: normal;
+    /* -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: rgb(52, 53, 58); */
+    background-image: url('../img/background/background.png');
+    background-repeat: no-repeat;
+    background-position: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*---------------------------------*/
+.page {
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  margin-left: 0;
+}
+.body__container {
+  padding-bottom: 1%;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  padding: 3.5% 0;
+}
+.header__page {
+  padding: 60px 0 10px;
+}
+.header__content-list {
+  padding-left: 0;
+  margin: 0;
+}
+.header__list-paragraph {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%; 
+}
+.header__logo {
+  width: 252px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--Gray, #8E8E8E);
+}
+.body__container {
+  position: relative;
+}
+.body__title {
+  margin: 10px 0 50px;
+}
+.body__title-h {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 110%; 
+}
+.body__title-h:first-child {
+  font-size: 130px;
+}
+.body__cards {
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.body__card {
+  flex: 0 1 32.4%;
+}
+.body__cards :nth-child(2) {
+  flex: 0 1 53%;
+}
+.body__cards :nth-child(4) {
+  flex: 0 1 53%;
+}
+.body__card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body__card-title-h {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%; 
+  flex: 6 !important;
+}
+.body__card-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.body__card-list-paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%; 
+}
+.numbered__list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+  margin-top: 0.5rem;
+}
+.numbered__list-paragrap {
+  padding-left: 10px;
+}
+.payment__card {
+  border-radius: 16px;
+  background: var(--Style, #F1DFDC);
+  padding: 20px 30px 10px;
+}
+.payment__card-title-h {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.body__card-input-group {
+  margin: 20px 0 10px;
+  flex-direction: column;
+  gap: 15px;
+}
+.card__input-group-contnet {
+  position: relative;
+}
+.card__input-group-contnet::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 35px;
+  width: 42px;
+  height: 30px;
+  background-image: url('../img/card/icons8-мир-96.svg');
+  background-repeat: no-repeat;
+}
+.card__input-group-images {
+  border-radius: 15px 0 0 15px;
+  background: var(--White, #FFF);
+  padding: 0 5px 0 35px;
+}
+.card__input-group-input {
+  position: relative;
+  width: 100%;
+  padding: 25px 35px 26px 87px;
+  border-radius: 15px;
+  background: var(--White, #FFF);
+  color: var(--DarkGray, #8E8E8E);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.card__input-group-btn {
+  width: 100%;
+  padding: 25px 35px 26px 35px;
+  border-radius: 15px;
+  background: var(--Button-color, #171A21);
+  color: var(--White, #FFF);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.card__input-group-btn:hover {
+  background: rgba(23, 26, 33, 0.80);
+}
+.card__input-group-btn:active {
+  background: rgba(23, 26, 33, 0.50);
+}
+.body__card-annotation-paragraph {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+}
+.body__card-subtitle {
+  width: 75%;
+}
+.body__card-subtitle-p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%; 
+}
+.body__year {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.body__yaer-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*---------------------------media-------------------------------------*/
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1712px;
+  }
+}
+@media (max-width: 1024px) {
+    body {
+    background-position: -500px ;
+  }
+  .header__page {
+    padding: 20px 0 6px;
+  }
+  .header__logo {
+    width: 126px;
+    height: 20px;
+  }
+  .body__title {
+    margin: 3px 0 30px -3px;
+  }
+  .container {
+    max-width: 700px;
+    padding: 0;
+  }
+  .header__list-paragraph {
+    font-size: 18px;
+  }
+  .body__title-h:first-child {
+    font-size: 90px;
+  }
+  .body__title-h {
+    font-size: 55px;
+  }
+  .body__card-title-h {
+    font-size: 18px;
+  }
+  .body__card-list-paragraph {
+    font-size: 16px;
+  }
+  .payment__card-title-h {
+    font-size: 40px;
+  }
+  .body__card-annotation-paragraph {
+    font-size: 8px;
+  }
+  .body__card-subtitle-p {
+    font-size: 16px;
+  }
+  .body__cards {
+    gap: 30px 0;
+  }
+  .payment__card {
+    flex-grow: 0 ;
+    flex-shrink: 1;
+    flex-basis: 68.7%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .body__cards :nth-child(n+4) {
+    flex: 1 1 auto;
+  }
+  .body__card:nth-child(1) {
+    flex: 0 1 50%;
+  }
+  .body__card:nth-child(2) {
+    flex: 0 1 50%;
+  }
+  .body__card-list {
+    gap: 22.5px;
+  }
+  .card__input-group-images {
+    padding-left: 15px;
+  }
+  .card__input-group-contnet::before {
+    left: 15px;
+  }
+  .card__input-group-input {
+    padding-left: 67px;
+  }
+  .body__card-subtitle {
+    width: 88%;
+  }
+}
+@media (max-width: 550px) {
+  body {
+    background-size: cover;
+    background-position: -40px 120px;
+  }
+  .header__page {
+    padding: 10px 0 10px;
+  }
+  .header__logo {
+    width: 70px;
+    height: 20px;
+  }
+  .body__page {
+    padding-bottom: 30px;
+  }
+  .body__title {
+    margin: 5px 0 16px -3px;
+  }
+  .container {
+    max-width: 327px;
+  }
+  .header__list-paragraph {
+    font-size: 16px;
+  }
+  .body__title-h:first-child {
+    font-size: 40px;
+  }
+  .body__title-h {
+    font-size: 25px;
+  }
+  .body__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(25px, auto);
+    grid-gap: 16px;
+  }
+  .body__card {
+    height: min-content;
+  }
+  .body__card-title-h {
+    font-size: 16px;
+  }
+  .body__card-list-paragraph {
+    font-size: 15px;
+  }
+  .payment__card-title-h {
+    font-size: 23px;
+  }
+  .body__card:nth-child(1) {
+    order: 1;
+  }
+  .body__card:nth-child(2) {
+    order: 3;
+  }
+  .body__card:nth-child(3) {
+    order: 2;
+  }
+  .body__card:nth-child(4) {
+    order: 4;
+  }
+  .body__cards :nth-child(2) {
+    flex: 1 1 auto;
+  }
+  .body__cards :nth-child(4) {
+    flex: 1 1 auto;
+  }
+  .body__card-list {
+    gap: 5px;
+  }
+  .payment__card {
+    padding: 12px 18px 7px;
+  }
+  .card__input-group-input {
+    padding: 14px 20px 14px 65px;
+  }
+  .card__input-group-btn {
+    padding: 14px 25px ;
+  }
+  .body__card-subtitle {
+    width: 100%;
+  }
+  .body__year {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header__page {
+    padding: 10px 0 10px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .body__title {
+    margin: 5px 0 16px -3px;
+  }
+  .container {
+    max-width: 270px;
+  }
+  .header__list-paragraph {
+    font-size: 15px;
+  }
+  .body__title-h:first-child {
+    font-size: 35px;
+  }
+  .body__title-h {
+    font-size: 20px;
+  }
+  .body__card-title-h {
+    font-size: 15px;
+  }
+  .body__card-list-paragraph {
+    font-size: 14px;
+  }
+  .payment__card-title-h {
+    font-size: 20px;
+  }
+  .card__input-group-input {
+    font-size: 12px;
+  }
+}
+
+
+/*----------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
